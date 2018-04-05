@@ -1,10 +1,25 @@
 package entity;
 
+import javax.persistence.*;
+
+@Table(name = "Cat")
+@Entity
 public class Cat {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private long id;
+
+    @Column(name = "cat_name")
     private String catName;
+
+    @Column(name = "weight")
     private float weight;
+
+    @Column(name = "sex")
     private boolean sex;
+
+    @Transient
     private long ownerId;
 
     public long getId() {

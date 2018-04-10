@@ -80,8 +80,8 @@ public class HibernateStorage {
 
     public static void main(String[] args) {
         HibernateStorage storage = new HibernateStorage();
-
-        List<Cat> cats = storage.search("а");
-        System.out.println(cats);
+//
+//        List<Cat> cats = storage.search("а");
+//        System.out.println(cats);
     }
 }
